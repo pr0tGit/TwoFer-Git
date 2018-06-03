@@ -10,6 +10,13 @@ namespace TwoFer_Git
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Name());
+            Console.ReadLine();
         }
+
+        public static string Name(string input = null)
+        {
+            return string.Format("One for {0}, one for me.", input ?? "you");
+        } // end of Name method
     }
 }
